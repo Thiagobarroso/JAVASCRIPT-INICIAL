@@ -1,4 +1,4 @@
-/*var nome = "Thiago"; //String
+var nome = "Thiago"; //String
 var idade = 27; //number
 var possuiFaculdade = true; // Boolean
 var time; // undefined
@@ -9,7 +9,7 @@ var novoObjeto = {}; // Object
 console.log(typeof novoObjeto);*/
 
 ///////////////////////////]
-/*
+
 var nome = "Thiago",
   sobreNome = "Barroso";
 ultimoNome = "Silva";
@@ -32,9 +32,7 @@ var idade = 27;
 // e outra com seu sobrenome e some as mesmas
 var nome = "Thiago",
   sobrenome = "Barroso";
-
 var nomeTodo = `${nome} ${sobrenome}`;
-console.log(nomeTodo);
 
 // Coloque a seguinte frase em uma variável: It's time
 
