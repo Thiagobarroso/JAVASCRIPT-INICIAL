@@ -29,3 +29,24 @@ var nome = "Thiago Barroso ",
 console.log(nome, cidade);
 
 ////// undefined /////
+
+var naoDefinida;
+console.log(naoDefinida);
+
+////////// hosting - o JovaScript le o codigo de cima para baixo, se você dá o console.log antes de definir a variavel vai dá undefined////////
+
+//Excercícios//
+
+var nome = "Thiago Barroso da Silva";
+console.log(nome);
+
+var idade = 27;
+console.log(idade);
+
+var comidaFavorita;
+console.log(comidaFavorita);
+
+var comidaFavorita = "Hambuguer";
+console.log(comidaFavorita);
+
+var time, enderco, pais, familia, casa;
