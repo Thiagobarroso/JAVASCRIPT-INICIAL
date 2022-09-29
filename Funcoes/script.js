@@ -44,15 +44,88 @@ addEventListener("click", function () {
 //////////////////////////////////////////////
 
 function terceiraIdade(idade) {
-  if (typeof idade !== "Number") {
-    return "digite um valor numerico";
+  if (typeof idade !== "number") {
+    return "Digite um valor numerico";
   } else if (idade >= 60) {
-    console.log("É idoso");
-    return true;
+    return "Você é Idoso";
   } else {
-    console.log("não é idoso");
-    return false;
+    return "Você não é idoso";
   }
 }
 
-console.log(terceiraIdade(49));
+console.log(terceiraIdade(60));
+
+////////////////////////////////////////////
+
+function aindaNaoFui(paisesVisitados) {
+  totalPaises = 193;
+  return `Falta visitar ${totalPaises - paisesVisitados}`;
+}
+
+console.log(aindaNaoFui(50));
+
+///////////////////// EXCERCICIOS ////////////////////////,
+
+// Crie uma função para verificar se um valor é Truthy
+function verificar(possivelResultado) {
+  return !!possivelResultado;
+}
+console.log(verificar(""));
+
+// Crie uma função matemática que retorne o perímetro de um quadrado
+
+function areaQuadrada2(lado2) {
+  return lado2 * 4;
+}
+console.log(areaQuadrada2(10));
+
+// Crie uma função que retorne o seu nome completo
+
+function nomeCompleto1(nome, sobrenome) {
+  return `${nome} ${sobrenome}`;
+}
+console.log (nomeCompleto1("Thiago", "Barroso"))
+
+
+// Crie uma função que verifica se um número é par
+ function numeroPar(valor2) {
+  if (valor2 % 2 === 0) {
+    console.log("O numero é par");
+  } else {
+    console.log ("O número impar")
+  }
+ }
+ console.log (numeroPar(1000))
+
+ // Crie uma função que retorne o tipo de
+// dado do argumento passado nela (typeof)
+
+function retorneTipo(dados) {
+  return (typeof dados)
+}
+console.log (retorneTipo(false))
+
+// addEventListener é uma função nativa do JavaScript
+// o primeiro parâmetro é o evento que ocorre e o segundo o Callback
+// utilize essa função para mostrar no console o seu nome completo
+// quando o evento 'scroll' ocorrer.
+
+addEventListener('scroll', function(){
+  console.log('Thiago Barroso')
+});
+
+/*function addEventListener('scroll' function nomeCompleto1(){
+  console.log("Thiago")})*/
+
+
+function precisoVisitar(paisesVisitados) {
+  var totalPaises = 193;
+  return `Ainda faltam ${totalPaises - paisesVisitados} países para visitar`;
+}
+function jaVisitei(paisesVisitados) {
+  return `Já visitei ${paisesVisitados} do total de ${totalPaises} países`;
+}
+console.log(precisoVisitar(20));
+console.log(jaVisitei(20));
+
+
