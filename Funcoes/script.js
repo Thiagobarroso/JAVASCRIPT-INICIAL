@@ -1,11 +1,11 @@
-function areaQuadrada(lado) {
+/*function areaQuadrada(lado) {
   return (lado * lado) / 2;
 }
 console.log(areaQuadrada(10));
 
 /////////////////////////////////////////
 
-function pi() {
+function pi() { 
   return 3.14;
 }
 
@@ -35,7 +35,7 @@ function corFavorida(cor) {
 console.log(corFavorida("Verde"));
 
 //////////////////////////////////////////////
-
+*/
 /* CALLBACK */
 addEventListener("click", function () {
   console.log("oi");
@@ -84,39 +84,37 @@ console.log(areaQuadrada2(10));
 function nomeCompleto1(nome, sobrenome) {
   return `${nome} ${sobrenome}`;
 }
-console.log (nomeCompleto1("Thiago", "Barroso"))
-
+console.log(nomeCompleto1("Thiago", "Barroso"));
 
 // Crie uma função que verifica se um número é par
- function numeroPar(valor2) {
+function numeroPar(valor2) {
   if (valor2 % 2 === 0) {
     console.log("O numero é par");
   } else {
-    console.log ("O número impar")
+    console.log("O número impar");
   }
- }
- console.log (numeroPar(1000))
+}
+console.log(numeroPar(1000));
 
- // Crie uma função que retorne o tipo de
+// Crie uma função que retorne o tipo de
 // dado do argumento passado nela (typeof)
 
 function retorneTipo(dados) {
-  return (typeof dados)
+  return typeof dados;
 }
-console.log (retorneTipo(false))
+console.log(retorneTipo(false));
 
 // addEventListener é uma função nativa do JavaScript
 // o primeiro parâmetro é o evento que ocorre e o segundo o Callback
 // utilize essa função para mostrar no console o seu nome completo
 // quando o evento 'scroll' ocorrer.
 
-addEventListener('scroll', function(){
-  console.log('Thiago Barroso')
+addEventListener("scroll", function () {
+  console.log("Thiago Barroso");
 });
 
 /*function addEventListener('scroll' function nomeCompleto1(){
   console.log("Thiago")})*/
-
 
 function precisoVisitar(paisesVisitados) {
   var totalPaises = 193;
@@ -128,4 +126,9 @@ function jaVisitei(paisesVisitados) {
 console.log(precisoVisitar(20));
 console.log(jaVisitei(20));
 
+///////////////////////////////
+function areaQuadrada(lado) {
+  return lado + lado;
+}
 
+console.log(areaQuadrada(20));
