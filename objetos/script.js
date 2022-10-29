@@ -24,3 +24,56 @@ console.log(pessoa.nomeSocial());
 console.log(pessoa.nomeProfissao());
 
 //////////////////////
+/*EXCERCICIOS*/
+
+// CRIE UM OBJETO COM OS SEUS DADOS PESSOAIS
+//DEVE POSSUIR PELO MENOS DUAS PROPRIEDADES NOME E SOBRENOME
+
+var dadosPessoais = {
+  nome: "Thiago",
+  sobrenome: "Barroso",
+  idade: 27,
+  profissao: "programador",
+  possuiFilho: true,
+  casado: true,
+  //Crie um método no objeto anterior, que mostre o seu nome completo.
+  nomeCompleto: function () {
+    return `${this.nome} ${this.sobrenome};`;
+  },
+};
+
+console.log(dadosPessoais.nomeCompleto());
+
+//modifique o valor da propriedade preço para 3000
+
+var carro = {
+  preco: 1000,
+  portas: 4,
+  marca: "Audi",
+};
+carro.preco = 3000;
+console.log(carro.preco);
+
+//crie um objeto de um cachorro que representa um labrador
+//preto com 10 anos, que late ao ver um homem.
+
+var cachorro = {
+  raca: "labrado",
+  idade: 10,
+  cor: "preto",
+  latir: function (pessoa) {
+    if (pessoa === "homem") return "latir";
+    else {
+      return "nada";
+    }
+  },
+};
+
+console.log(cachorro.latir("homem"));
+
+//////////////////////////////
+/* TUDO É OBJETO */
+
+var nome = "Thiago Barroso da Silva";
+console.log(nome.length);
+console.log(nome.toUpperCase());
