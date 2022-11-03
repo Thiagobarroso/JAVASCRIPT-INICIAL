@@ -74,6 +74,13 @@ console.log(cachorro.latir("homem"));
 //////////////////////////////
 /* TUDO É OBJETO */
 
-var nome = "Thiago Barroso da Silva";
-console.log(nome.length);
-console.log(nome.toUpperCase());
+var nome = 'Thiago'    
+//.fixed, ele arredonda um number 
+//length
+//.slice
+
+
+//nomei 5 propriedades ou método de elementos do don
+var btn = document.querySelector('.btn');
+btn.appendChild
+btn.
