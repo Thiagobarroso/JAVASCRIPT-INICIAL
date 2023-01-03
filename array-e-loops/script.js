@@ -1,111 +1,77 @@
-/*Array, é um grupo de valores, geralemnte relacionados. servem para guardarmos diferentes valores em uma única variável*/
+// ARRAY
 
-var numbers = [05, 04, 03, 04, 02, 10, 12];
-console.log(
-  numbers.sort(function (a, b) {
-    if (a > b) return -1;
-  })
-);
-/*numbers.sort(function (a, b) {
-    return a - b;
-  })*/
-
-///////////////////////////////////////////
-
-var frutas = [
-  "bananas",
-  "acerola",
-  "açai",
-  "maça",
-  "caju",
-  "morango",
-  "abacaxi",
-];
-console.log(
-  frutas.sort(function (a, b) {
-    if (a > b) {
-      return 1;
-    }
-    if (a < b) {
-      return -1;
-    }
-    return 0;
-  })
-);
-
-////////////////////////////////////////
-
-var videoGames = ["Switch", "PS4", "xbox"];
+var videoGames = ["Playstation", "XBOX", "Nitendo"];
 console.log(videoGames[0]);
 
-var funcionarios = ["Thiago", "Weligton", "Patrick", "Italo"];
-var ultimofuncionario = funcionarios.pop();
-var addfuncionario = funcionarios.push("Felipe");
-console.log(funcionarios);
+// MÉTODOS E PROPRIEDADES DE UMA ARRAY
 
-/* LOOOPS */
-/*FOR LOOP*/
-for (let num = 0; num <= 100; num = num + 5) {
-  console.log(num);
+var videoGames = ["Switch", "PS4", "XBox"];
+
+videoGames.pop(); // Remove o último item e retorna ele
+videoGames.push("3DS"); // Adiciona ao final da array
+videoGames.length; // 3
+
+/*Existem diversos outros métodos, como map, reduce, forEach e mais que veremos mais à frente*/
+
+//FOR LOOP
+for (let n = 0; n <= 10; n++) {
+  console.log(n);
 }
 
-/*FOR LOOP - 1 A 1*/
+/* O for loop possui 3 partes, início, condição e incremento*/
 
-for (let numero = 0; numero <= 100; numero++) {
-  console.log(numero);
-}
+// WHILE LOOP
 
-/*WHILE LOOP*/
-
-let i = 0;
+var i = 0;
 while (i < 10) {
   console.log(i);
-  i = i + 2; //poderia ser de um a um: i++
+  i++;
 }
+// Retorna de 0 a 9 no console
 
-//////////////////////////////////////
-/*LO0P COM ARRAY E BREAK*/
-
-var games = ["Switch", "PS4", "xbox"];
-
-for (var item = 0; item < games.length; item++) {
-  console.log(games[item]);
-  if (games[item] === "PS4") {
+var videoGames = ["Playstation", "XBOX", "Nitendo"];
+for (let item = 0; item < videoGames.length; item++) {
+  console.log(videoGames[item]);
+  if (videoGames[item] === "XBOX") {
     break;
   }
 }
 
-/*FOREACH*/
-var frutas = ["banana", "maça", "laranja", "uva", "abaxaxi"];
+//FOREACH
+/*forEach é um método que executa uma função para cada item da Array. É uma forma mais simples de utilizarmos um loop com arrays (ou array-like)*/
 
-frutas.forEach(function (fruta) {
-  console.log(fruta);
+var videoGames = ["Switch", "PS4", "XBox", "3DS"];
+videoGames.forEach(function (item) {
+  console.log(item);
+});
+// O argumento item será atribuído dinamicamente
+
+//EXCERCICIOS
+
+// Crie uma array com os anos que o Brasil ganhou a copa
+// 1959, 1962, 1970, 1994, 2002
+
+var brasilVenceu = ["1959", "1962", "1970", "1994", "2002"];
+console.log(brasilVenceu);
+
+// Interaja com a array utilizando um loop, para mostrar
+// no console a seguinte mensagem, `O brasil ganhou a copa de ${ano}`
+
+brasilVenceu.forEach(function (ano) {
+  console.log(`O brasil ganhou a copa de ${ano}`);
 });
 
-/////// EXCERCICICOS  /////////
-
-// crie um array com os anos que o Brasil ganhou a copa
-var brasilCampeao = ["1959", "1970", "1994", "2002"];
-
-//interaja com o array utilizando um loop, para mostras no consegue a mensagem
-// o Brasil ganhou a copa de ano
-
-for (var ano = 0; ano < brasilCampeao.length; ano++) {
-  console.log(`O brasil ganhou a copa em ${brasilCampeao[ano]}`);
-}
-
-//interaja com um loop nas frutas abaixo e pare ao chegar em pera
-
-var frutas2 = ["banana", "maça", "Pera", "Uva", "melancia"];
-for (var ind = 0; ind < frutas2.length; ind++) {
-  console.log(frutas2[ind]);
-  if (frutas2[ind] === "Pera") {
+// Interaja com um loop nas frutas abaixo e pare ao chegar em Pera
+var frutas = ["Banana", "Maçã", "Pera", "Uva", "Melância"];
+for (let item = 0; item < frutas.length; item++) {
+  console.log(frutas[item]);
+  if (frutas[item] === "Pera") {
     break;
   }
 }
 
-// coloque a ultima fruta da array acima em uma variável
-//sem remover a mesma do array
+// Coloque a última fruta da array acima em uma variável,
+// sem remover a mesma da array.
 
-var ultimaForma = frutas2[frutas2.length - 1];
-console.log(ultimaForma);
+var ultimaFruta = frutas[frutas.length - 1];
+console.log(ultimaFruta);
