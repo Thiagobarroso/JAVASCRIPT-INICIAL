@@ -1,52 +1,65 @@
-var nome = "Thiago ";
-var sobreNome = "Barroso ";
-var faculdade = false;
+const nome = "Thiago Barroso";
+const idade = 28;
+const possuiFaculdade = false;
+console.log(nome, idade, possuiFaculdade);
 
-var dadosCliente = nome + sobreNome + faculdade;
+///////////////////////////////
+/*podemos declarar variaveis colocando somente uma vez o "const, var ou let"*/
 
-console.log(dadosCliente);
+const preco = 25;
+quantidade = 5;
+valorTotal = preco * quantidade;
 
-/////////////////////
+console.log(valorTotal);
 
-var preco = 25;
-var totalComprado = 5;
-var totalPreco = totalComprado * preco;
+///////////////////////////////
+/* HOSTING São movidas para cima do código, porém o valor atribuído não é movido.*/
 
-console.log(totalPreco);
-
-/////////////////////
-
-var preco = 25,
-  totalcomprado = 5,
-  totalPreco = preco * totalcomprado;
-console.log(totalPreco);
-
-/////////////////////
-
-var nome = "Thiago Barroso ",
-  cidade = "Cidade: Rio de janeiro";
-
-console.log(nome, cidade);
-
-////// undefined /////
-
-var naoDefinida;
-console.log(naoDefinida);
-
-////////// hosting - o JovaScript le o codigo de cima para baixo, se você dá o console.log antes de definir a variavel vai dá undefined////////
-
-//Excercícios//
-
-var nome = "Thiago Barroso da Silva";
 console.log(nome);
+var Nome = "André";
+// Retorna undefined
 
-var idade = 27;
-console.log(idade);
+var profissao = "Designer";
+console.log(profissao);
+// Retornar Designer
 
-var comidaFavorita;
-console.log(comidaFavorita);
+///////////////////////////
+/* MUDAR O VALOR ATRIBUÍDO. É possível mudar os valores atribuídos a variáveis declaradas com var e let. Porém não é possível modificar valores das declaradas com const */
 
-var comidaFavorita = "Hambuguer";
-console.log(comidaFavorita);
+var Idade = 17;
+Idade = 27;
+console.log(Idade);
 
-var time, enderco, pais, familia, casa;
+let Preco = 50;
+Preco = 25;
+console.log(Preco);
+
+/////////////////////////////
+
+/* EXCERCICIOS */
+
+// Declarar uma variável com o seu nome
+var excercicioNome = "Thiago";
+console.log(excercicioNome);
+
+// Declarar uma variável com a sua idade
+
+var excercicioIdade = 27;
+console.log(excercicioIdade);
+
+// Declarar uma variável com a sua comida
+// favorita e não atribuir valor
+
+var ComidaFavorita;
+console.log(ComidaFavorita);
+
+// Atribuir valor a sua comida favorita
+
+ComidaFavorita = "Strogonoff";
+console.log(ComidaFavorita);
+
+// Declarar 5 variáveis diferentes sem valores
+
+var casa, jardim, sala, cozinha, banheiro;
+
+console.log(casa, jardim, sala, cozinha, banheiro);

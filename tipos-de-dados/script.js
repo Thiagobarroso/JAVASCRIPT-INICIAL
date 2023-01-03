@@ -1,43 +1,65 @@
-var nome = "Thiago"; //String
-var idade = 27; //number
-var possuiFaculdade = true; // Boolean
-var time; // undefined
-var comida = null; // Null
+/*07 tipos de dados*/
+
+var nome = "Thiago"; //string
+var idade = 28; // Number
+var possuiFaculdade = true; //boolean
+var time; //undefined
 var simbolo = Symbol(); // Symbol
 var novoObjeto = {}; // Object
 
-console.log(typeof novoObjeto);*/
+///////////////////////////
 
-///////////////////////////]
+/*Verificar dados*/
 
-var nome = "Thiago",
-  sobreNome = "Barroso";
-ultimoNome = "Silva";
-console.log(nome + " " + sobreNome);
-console.log(
-  `Meu primeiro nome é ${nome} Meu sobrenome é ${sobreNome} meu ultimo nome é ${ultimoNome}`
-);*/
+var Nome = "Thiago", // String
+  Idade = 27, //number
+  possuiFaculdade = false; //boolean
+
+console.log(typeof Nome, typeof Idade, typeof possuiFaculdade);
+
+///////////////////////////
+
+var nome = "André";
+var sobrenome = "Rafael";
+var nomeCompleto = nome + " " + sobrenome;
+
+var gols = 1000;
+var frase = "Romário fez " + gols + " gols";
+
+/*TAMPLETE STRING*/
+var gols = 1000;
+var frase1 = "Romário fez " + gols + " gols";
+var frase2 = `Romário fez ${gols} gols`; // Utilizando Template String
+
+////////////////////////////////////
+/* EXCERCICIOS */
 
 // Declare uma variável contendo uma string
-var nomeCompleto = "Thiago Barroso";
+var fraseQualquer = "Eu quero ser programador";
+console.log(fraseQualquer);
 
 // Declare uma variável contendo um número dentro de uma string
-var variavelNumber = "27";
+var numero = "288";
+console.log(numero);
 
 // Declare uma variável com a sua idade
 
-var idade = 27;
+var Idade = 27;
+console.log(Idade);
 
 // Declare duas variáveis, uma com seu nome
 // e outra com seu sobrenome e some as mesmas
-var nome = "Thiago",
-  sobrenome = "Barroso";
-var nomeTodo = `${nome} ${sobrenome}`;
+
+var nome = "Thiago ",
+  sobreNome = "Barroso";
+var nomeCompleto = `${nome} ${sobreNome}`;
+console.log(nomeCompleto);
 
 // Coloque a seguinte frase em uma variável: It's time
 
-var frase = "it's time";
+var frase = `It's "time"`;
+console.log(frase);
 
 // Verifique o tipo da variável que contém o seu nome
 
-console.log(typeof nome);
+console.log(typeof nomeCompleto);

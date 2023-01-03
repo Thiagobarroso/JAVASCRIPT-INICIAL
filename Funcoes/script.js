@@ -1,108 +1,96 @@
-/*function areaQuadrada(lado) {
-  return (lado * lado) / 2;
+function areaQuadrada(lado) {
+  return lado * lado;
 }
-console.log(areaQuadrada(10));
+console.log(areaQuadrada(5));
 
-/////////////////////////////////////////
-
-function pi() { 
-  return 3.14;
+function ativo() {
+  console.log("Função ativa");
 }
+ativo();
 
-var total = pi() * 5;
-var arredondado = parseFloat(total.toFixed(5));
-console.log(arredondado);
-
-////////////////////////////////////////////
+////////////////////////////////
 
 function imc(peso, altura) {
-  const imc = peso / altura ** 2;
-  var imcArredondado = parseFloat(imc.toFixed(2));
-  return imcArredondado;
+  return peso / altura ** 2;
 }
 
-////////////////////////////////////////////
+console.log(imc(80, 1.8));
 
-function corFavorida(cor) {
-  if (cor === "Azul") {
-    return "Você gosta do céu";
-  } else if (cor === "Verde") {
-    return "Você gosta da Floresta";
+function corFavorita(cor) {
+  if (cor === "azul") {
+    return "Olhe para o ceú";
+  } else if (cor === "verde") {
+    return "Olhe para a floresta";
+  } else if (cor === "amarelo") {
+    return "Olhe para o Sol";
   } else {
-    return "Você não gosta de cores";
+    return "Só escolheu cores bosta, tenha bom gosto dá proxima vez";
   }
 }
-console.log(corFavorida("Verde"));
+console.log(corFavorita("verde"));
 
-//////////////////////////////////////////////
-*/
-/* CALLBACK */
-addEventListener("click", function () {
-  console.log("oi");
-});
-
-//////////////////////////////////////////////
+function mostrarConsole() {
+  console.log("Clicou");
+}
+addEventListener("click", mostrarConsole);
 
 function terceiraIdade(idade) {
   if (typeof idade !== "number") {
-    return "Digite um valor numerico";
+    return "Por favor digite sua idade em numero";
   } else if (idade >= 60) {
     return "Você é Idoso";
   } else {
-    return "Você não é idoso";
+    return "você não é idoso";
   }
 }
 
-console.log(terceiraIdade(60));
+console.log(terceiraIdade("thiago"));
 
-////////////////////////////////////////////
-
-function aindaNaoFui(paisesVisitados) {
-  totalPaises = 193;
-  return `Falta visitar ${totalPaises - paisesVisitados}`;
-}
-
-console.log(aindaNaoFui(50));
-
-///////////////////// EXCERCICIOS ////////////////////////,
+////////////////////////////////////////////////
 
 // Crie uma função para verificar se um valor é Truthy
-function verificar(possivelResultado) {
-  return !!possivelResultado;
+function istruthy(verificar) {
+  return !!verificar;
 }
-console.log(verificar(""));
+
+console.log(istruthy("thiago"));
 
 // Crie uma função matemática que retorne o perímetro de um quadrado
+// lembrando: perímetro é a soma dos quatro lados do quadrado
 
-function areaQuadrada2(lado2) {
-  return lado2 * 4;
+function quadrado(lado) {
+  return lado + lado + lado + lado;
 }
-console.log(areaQuadrada2(10));
+
+console.log(quadrado(2));
 
 // Crie uma função que retorne o seu nome completo
+// ela deve possuir os parâmetros: nome e sobrenome
 
-function nomeCompleto1(nome, sobrenome) {
+function nomeCompleto(nome, sobrenome) {
   return `${nome} ${sobrenome}`;
 }
-console.log(nomeCompleto1("Thiago", "Barroso"));
+
+console.log(nomeCompleto("Thiago", "barroso"));
 
 // Crie uma função que verifica se um número é par
-function numeroPar(valor2) {
-  if (valor2 % 2 === 0) {
-    console.log("O numero é par");
+
+function numeroPar(num) {
+  if (num % 2 === 0) {
+    return "esse numero é par";
   } else {
-    console.log("O número impar");
+    return "Esse numero é impar";
   }
 }
-console.log(numeroPar(1000));
+
+console.log(numeroPar(30));
 
 // Crie uma função que retorne o tipo de
 // dado do argumento passado nela (typeof)
 
-function retorneTipo(dados) {
-  return typeof dados;
+function tipoDado(valor) {
+  return typeof valor;
 }
-console.log(retorneTipo(false));
 
 // addEventListener é uma função nativa do JavaScript
 // o primeiro parâmetro é o evento que ocorre e o segundo o Callback
@@ -110,25 +98,18 @@ console.log(retorneTipo(false));
 // quando o evento 'scroll' ocorrer.
 
 addEventListener("scroll", function () {
-  console.log("Thiago Barroso");
+  console.log("thiago");
 });
 
-/*function addEventListener('scroll' function nomeCompleto1(){
-  console.log("Thiago")})*/
+// Corrija o erro abaixo
+const totalPaises = 193;
 
 function precisoVisitar(paisesVisitados) {
-  var totalPaises = 193;
   return `Ainda faltam ${totalPaises - paisesVisitados} países para visitar`;
 }
 function jaVisitei(paisesVisitados) {
   return `Já visitei ${paisesVisitados} do total de ${totalPaises} países`;
 }
-console.log(precisoVisitar(20));
-console.log(jaVisitei(20));
 
-///////////////////////////////
-function areaQuadrada(lado) {
-  return lado + lado;
-}
-
-console.log(areaQuadrada(20));
+precisoVisitar(20);
+jaVisitei(20);
