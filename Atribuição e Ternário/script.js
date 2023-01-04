@@ -36,26 +36,22 @@ else console.log("não possui faculdade");
 if (possuiFaculdade) console.log("Possui faculdade");
 else console.log("não possui faculdade");
 
-// EXERCICIOS
+// EXCERCICIOS
 
-//some 500 ap valor doe scroll abaixo
-//atribuindo o novo valor o scroll
-
+// Some 500 ao valor de scroll abaixo,
+// atribuindo o novo valor a scroll
 var scroll = 1000;
 scroll += 500;
 console.log(scroll);
 
-//atribua true para a variável dar credito.
-//caso o cliente posuua carro e casa.
-// e false caso o contrário.
-
+// Atribua true para a variável darCredito,
+// caso o cliente possua carro e casa.
+// E false caso o contrário.
 var possuiCarro = true;
 var possuiCasa = true;
 var darCredito;
-
-darCredito =
-  possuiCarro && possuiCasa
-    ? "Crédito liberado!"
-    : "Não podemos liberar o crédito nesse momento.";
-
-console.log(darCredito);
+if (possuiCarro && possuiCasa) {
+  console.log("dar credito");
+} else {
+  console.log("negar credito");
+}
