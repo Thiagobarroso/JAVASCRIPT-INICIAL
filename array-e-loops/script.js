@@ -1,77 +1,36 @@
-// ARRAY
+const animais = document.getElementById("animais");
+console.log(animais);
 
-var videoGames = ["Playstation", "XBOX", "Nitendo"];
-console.log(videoGames[0]);
+const gridSection = document.getElementsByClassName("grid-section");
+console.log(gridSection);
 
-// MÉTODOS E PROPRIEDADES DE UMA ARRAY
+const primeiraUl = document.querySelector("ul");
+console.log(primeiraUl);
 
-var videoGames = ["Switch", "PS4", "XBox"];
+const primeirolink = document.querySelector('[href^="#"]');
+console.log(primeirolink);
 
-videoGames.pop(); // Remove o último item e retorna ele
-videoGames.push("3DS"); // Adiciona ao final da array
-videoGames.length; // 3
+// EXCERCICIOS
 
-/*Existem diversos outros métodos, como map, reduce, forEach e mais que veremos mais à frente*/
+// Retorne no console todas as imagens do site
+const img2 = document.querySelectorAll("img");
+console.log(img2);
+// Retorne no console apenas as imagens que começaram com a palavra imagem
+const imagem2 = document.querySelectorAll('[src^="img/imagem"]');
+console.log(imagem2);
 
-//FOR LOOP
-for (let n = 0; n <= 10; n++) {
-  console.log(n);
-}
+// Selecione todos os links internos (onde o href começa com #)
+const linksInternos = document.querySelectorAll('[href^="#"]');
+console.log(linksInternos);
 
-/* O for loop possui 3 partes, início, condição e incremento*/
+// Selecione o primeiro h2 dentro de .animais-descricao
 
-// WHILE LOOP
+const primeiroh2 = document.querySelector(".animais-descricao h2");
+console.log(primeiroh2);
 
-var i = 0;
-while (i < 10) {
-  console.log(i);
-  i++;
-}
-// Retorna de 0 a 9 no console
+// Selecione o último p do site
 
-var videoGames = ["Playstation", "XBOX", "Nitendo"];
-for (let item = 0; item < videoGames.length; item++) {
-  console.log(videoGames[item]);
-  if (videoGames[item] === "XBOX") {
-    break;
-  }
-}
+const paragrafos = document.querySelectorAll("p");
+console.log(paragrafos[paragrafos.length - 1]);
 
-//FOREACH
-/*forEach é um método que executa uma função para cada item da Array. É uma forma mais simples de utilizarmos um loop com arrays (ou array-like)*/
-
-var videoGames = ["Switch", "PS4", "XBox", "3DS"];
-videoGames.forEach(function (item) {
-  console.log(item);
-});
-// O argumento item será atribuído dinamicamente
-
-//EXCERCICIOS
-
-// Crie uma array com os anos que o Brasil ganhou a copa
-// 1959, 1962, 1970, 1994, 2002
-
-var brasilVenceu = ["1959", "1962", "1970", "1994", "2002"];
-console.log(brasilVenceu);
-
-// Interaja com a array utilizando um loop, para mostrar
-// no console a seguinte mensagem, `O brasil ganhou a copa de ${ano}`
-
-brasilVenceu.forEach(function (ano) {
-  console.log(`O brasil ganhou a copa de ${ano}`);
-});
-
-// Interaja com um loop nas frutas abaixo e pare ao chegar em Pera
-var frutas = ["Banana", "Maçã", "Pera", "Uva", "Melância"];
-for (let item = 0; item < frutas.length; item++) {
-  console.log(frutas[item]);
-  if (frutas[item] === "Pera") {
-    break;
-  }
-}
-
-// Coloque a última fruta da array acima em uma variável,
-// sem remover a mesma da array.
-
-var ultimaFruta = frutas[frutas.length - 1];
-console.log(ultimaFruta);
+/////////////////////////////////////////////////
