@@ -4,7 +4,7 @@ console.log(animais);
 const gridSection = document.getElementsByClassName("grid-section");
 console.log(gridSection);
 
-const primeiraUl = document.querySelector("ul");
+            const primeiraUl = document.querySelector("ul");
 console.log(primeiraUl);
 
 const primeirolink = document.querySelector('[href^="#"]');
